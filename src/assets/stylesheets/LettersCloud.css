@@ -1,0 +1,35 @@
+.floating-letters-container {
+  position: relative;
+  width: 40rem;
+  height: 20rem;
+  /* overflow: hidden; */
+  /* border: 2px solid green; */
+  border-radius: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  position: absolute;
+  opacity: 0;
+  animation-name: float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* Change the translation values her to modify direction */
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-50px) translateX(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) translateX(100px);
+  }
+}

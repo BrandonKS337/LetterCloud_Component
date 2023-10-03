@@ -1,0 +1,17 @@
+@keyframes popIn {
+  0% {
+    transform: translateY(-14rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-2);
+    opacity: 1;
+  }
+}
+
+.pop-out-text {
+  animation: popIn 2s forwards;
+  white-space: nowrap;
+}
+
+

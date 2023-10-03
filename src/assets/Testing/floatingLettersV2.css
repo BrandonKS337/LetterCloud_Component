@@ -1,0 +1,22 @@
+.floating-letters-container-v2 {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    /* overflow: hidden; */
+    border: 2px solid red;
+  }
+  
+  .letter {
+    position: absolute;
+    animation: float linear infinite;
+    animation-play-state: running;
+  }
+  
+  @media (max-width: 600px) {
+    .floating-letters-container-v2 {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+  
+  
