@@ -3,9 +3,12 @@ import styled, { keyframes } from 'styled-components';
 
 // Generate random X and Y translations for each letter.
 const generateRandomXY = () => {
+  const centerX = 0; //Center is 0 on x-axis
+  const centerY = -18 //sets y spawn point center at 10rem above the component
+
   //let vs const. let allows math.random to change the axis. Const picks one and then you're stuck for that whole animation.
-  let x = Math.random() * 25 - 10; // adjust to change x access animation start point
-  let y = Math.random() * 10 - 32; // adjust to change y access animation start point
+  let x = centerX + (Math.random() * 25 - 10); // adjust to change x access animation start point
+  let y = centerY + (Math.random() * 10 - 10); // adjust to change y access animation start point
   return { x, y };
 };
 

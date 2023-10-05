@@ -1,5 +1,5 @@
 @keyframes popIn {
-  0% {
+  25% {
     transform: translateY(-14rem);
     opacity: 0;
   }
